@@ -1,10 +1,10 @@
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/heroimage.png");
+  background-image: url("../img/heroimage2.png");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  top: 100px;
+  top: 150px;
   position: relative;
 }
 
@@ -28,10 +28,11 @@ nav ul {
     display: flex;
     list-style: none;
     font-family: 'Raleway';
+    color: white;
     font-size: 18px;
     float: right;
-    margin-top: 60px;
-    text-decoration: none;
+    margin-top: 110px;
+    font-weight: bold;
   }
 
   nav ul li {
@@ -54,27 +55,28 @@ nav ul {
 
   h1 {
 font-family: Raleway;
-font-size: 30px;
+font-size: 45px;
 font-style: normal;
-font-weight: bold;
 letter-spacing: normal;
+color: white;
   }
 
   h2 {
-    font-size:25px;
+    font-size:18px;
     font-family: Raleway;
     text-transform: uppercase;
     color: black;
-    padding: 1px;
+    text-align: center;
   }
 
   h3 {
-    font-size:25px;
+    font-size:18px;
     font-family: Raleway;
     text-transform: uppercase;
     color: black;
+    font-weight: bold;
     padding: 1px;
-    margin-top: 100px;
+    margin-top: 170px;
     text-align: center;}
 
   .center {
@@ -95,7 +97,6 @@ letter-spacing: normal;
   .grid-item {
     background-color: white;
     text-align: center;
-    padding: 10px;
   }
 
   .grid-item img {
@@ -104,17 +105,17 @@ letter-spacing: normal;
   }
 
   h4 {
-    font-size:25px;
+    font-size:18px;
     font-family: Raleway;
     text-transform: uppercase;
     color: black;
+    font-weight: bold;
     text-align: center;
   }
 
   h6 {
     font-size:16px;
     font-family: Raleway;
-    margin-top: 1px;
   }
 
   p {
@@ -135,6 +136,7 @@ letter-spacing: normal;
   button {
     font-size:25px;
     font-family: sans-serif;
+    text-align: center;
   }
   
   .center {
@@ -152,11 +154,11 @@ letter-spacing: normal;
   }
   
   .silver-background {
-  background-color: gray;
+  background-color:;
 }
   
   #forms {
-  background-color: gray;
+  background-color:gray;
 }
 
 body, html {
@@ -170,11 +172,45 @@ body, html {
   margin-right: 20px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+
+.img-zoom {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.img-zoom img {
+  display: block;
+  width: 100%;
+  transition: 0.4s ease;
+  transform-origin: 50% 50%; /* center zoom */
+}
+.img-zoom img:hover {
+  transform: scale(1.21);
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 1px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1400px;
   position: relative;
   margin: auto;
 }
@@ -188,7 +224,7 @@ body, html {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 35%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -270,23 +306,30 @@ label {
   font-family: sans-serif;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
 button {
   font-size:25px;
   font-family: Raleway;
   background-color:gray;
-  margin-left: 450px;
   margin-bottom: 50px;
 color: white;
 }
 
+
 .social-icons {
   text-align: center;
   }  
+
 .social-icons li {
   display:inline-block;
   list-style-type:none;
   -webkit-user-select:none;
   -moz-user-select:none;
+  padding: 10px;
   }
 .social-icons li a {
   border-bottom: none;
@@ -294,5 +337,6 @@ color: white;
 .social-icons li img {
   width:60px;
   height:60px;
-  margin-right: 20px;
+  border-radius: 50%;
+  }
 }

@@ -1,3 +1,4 @@
+console.log('hi from the code')
 var slideIndex = 1;
 showSlides(slideIndex);
 
